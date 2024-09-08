@@ -16,6 +16,9 @@ div.container {
   transition: transform 0.2s ease-in-out;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  margin-left: 105px;
+  margin-right: 105px;
+  margin-top: 25px;
 }
 @media print {
   div.container {
