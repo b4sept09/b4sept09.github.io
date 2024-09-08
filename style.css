@@ -169,3 +169,51 @@ div.description p{
   color: rgb(64, 91, 169);
   font-weight: bold;
 }
+@media only screen and (max-width: 480px) {
+  div.container {
+    max-width: 90%;
+    padding: 10px;
+  }
+  nav ul {
+    padding: 0.5em;
+  }
+  div.img {
+    width: 80%;
+    height: 80%;
+  }
+  div.description {
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  div.container {
+    max-width: 80%;
+    padding: 20px;
+  }
+  nav ul {
+    padding: 1em;
+  }
+  div.img {
+    width: 70%;
+    height: 70%;
+  }
+  div.description {
+    padding: 20px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  div.container {
+    max-width: 70%;
+    padding: 30px;
+  }
+  nav ul {
+    padding: 1.5em;
+  }
+  div.img {
+    width: 60%;
+    height: 60%;
+  }
+  div.description {
+    padding: 30px;
+  }
+}
