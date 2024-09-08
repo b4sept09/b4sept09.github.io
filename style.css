@@ -1,9 +1,9 @@
-div.container{
+div.container {
   background-color: burlywood;
   border: 5px solid;
   border-radius: 20px;
-  width: 80%;
-  height: 90%;
+  max-width: 210mm;
+  max-height: 297mm;
   padding: 10mm;
   box-sizing: border-box;
   position: absolute;
@@ -14,6 +14,17 @@ div.container{
   border-image: linear-gradient(to right, #c7b8ea, #d2c4e4, #e4d6f5) 30;
   transition: transform 0.2s ease-in-out;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+@media print {
+  div.container {
+    max-width: 210mm;
+    max-height: 297mm;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 10mm;
 }
 div.container:hover {
   transform: translate(-50%, -50%) scale(1.1);
