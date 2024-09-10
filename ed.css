@@ -244,13 +244,20 @@ div.container {
       transform: scale(1);
     }
   }
-  .scroll-effect {
-    position: relative;
-    transform: translateY(100px);
-    transition: transform 1s ease-in-out;
-  }
-  
-  .scroll-effect.active {
-    transform: translateY(0);
-  }
-  
+div.eds{
+        border: 2px solid rgb(64, 91, 169);
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: auto;
+        padding: 20px;
+      
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+      
+        background-image: linear-gradient(to right, coral, #FFC67D);
+        background-color: coral;
+      }
+div.eds
