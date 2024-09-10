@@ -211,13 +211,11 @@ div.container {
   
     font-family: Arial, sans-serif;
     font-size: 14px;
-  
-    background-image: linear-gradient(to right, coral, #FFC67D);
-    background-color: coral;
+    background-color: rgb(64, 91, 169);
   }
   div.description p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(64, 91, 169);
+    color: #fff;
     font-weight: bold;
   }
   .loading {
