@@ -247,17 +247,27 @@ div.container {
 div.eds{
         border: 2px solid rgb(64, 91, 169);
         border-radius: 15px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 10px #fff;
         margin-left: 20px;
         margin-right: 20px;
         margin-top: 20px;
         margin-bottom: auto;
         padding: 20px;
-      
         font-family: Arial, sans-serif;
         font-size: 14px;
-      
-        background-image: linear-gradient(to right, coral, #FFC67D);
         background-color: coral;
       }
-div.eds
+header.edu{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(64, 91, 169);
+  text-shadow: 2px 2px 4px #fff;
+}
+div.eds ul h3{
+  color: rgb(64, 91, 169);
+}
+div.eds ul p{
+  color: rgb(64, 91, 169);
+}
+div.eds h2{
+  color: rgb(64, 91, 169);
+};

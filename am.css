@@ -1,256 +1,296 @@
 div.container {
-    background-color: burlywood;
-    border: 5px solid;
-    border-radius: 20px;
-    max-width: 170mm;
+  background-color: burlywood;
+  border: 5px solid;
+  border-radius: 20px;
+  max-width: 170mm;
+  max-height: 500mm;
+  padding: 10mm;
+  box-sizing: border-box;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, #c7b8ea, #d2c4e4, #e4d6f5) 30;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+@media print {
+  div.container {
+    max-width: 210mm;
     max-height: 500mm;
-    padding: 10mm;
-    box-sizing: border-box;
-    margin: 25px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid transparent;
-    border-image: linear-gradient(to right, #c7b8ea, #d2c4e4, #e4d6f5) 30;
-    transition: transform 0.2s ease-in-out;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
   }
-  @media print {
-    div.container {
-      max-width: 210mm;
-      max-height: 500mm;
-    }
-  }
-  
-  @page {
-    size: A4;
-    margin: 10mm;
-  }
-  div.header h1 {
-    color: rgb(64, 91, 169);
-    font-family: "Bauhaus 93";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    transition: all 0.2s ease-in-out;
-    line-height: 0.4;
-    animation: fadeIn 2s;
-  }
-  
-  div.header h1:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-    transition: all 0.5s ease-in-out;
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  div.subhead h2{
-    color: rgb(64, 91, 169);
-    text-align: right;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    animation: sparkle 2s infinite;
-    font-weight: 1000;
-  }
-  
-  @keyframes sparkle {
-    0% {
-      opacity: 2;
-      text-shadow: 0 0 0 yellow;
-    }
-    50% {
-      opacity: 0.9;
-      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    }
-    100% {
-      opacity: 2;
-      text-shadow: 0 0 0 yellow;
-    }
-  }
-  
-  nav ul {
-    list-style: none;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 0.5em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to right, #FFC67D, coral);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    perspective: 1000px;
-    transform: rotateY(deg);
-    transition: transform 0.5s ease;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-    margin-left: 20px;
-    text-decoration: none;
-  }
-  
-  nav ul li a, .separator {
-    font: bold 15px 'Bauhaus 93', sans-serif;
-    color: rgb(64, 91, 169);
-    text-decoration: none;
-    transition: color 0.2s ease, text-shadow 0.2s ease;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    animation: pulse 2s infinite;
-  }
-  
-  nav ul li a {
-    font: bold 15px 'Bauhaus 93', sans-serif;
-    color: rgb(64, 91, 169);
-    text-decoration: none !important;
-    transition: color 0.2s ease, text-shadow 0.2s ease;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    animation: fadeInPulse 2s;
-    overflow: hidden;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fadeInPulse {
-    0% {
-      opacity: 0;
-      transform: scale(1);
-    }
-    50% {
-      opacity: 1;
-      transform: scale(1.02);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  
-  
-  nav ul li a, .separator {
-    font: bold 15px 'Bauhaus 93', sans-serif;
-    color: rgb(64, 91, 169);
-    text-decoration: none;
-    transition: color 0.2s ease, text-shadow 0.2s ease;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    animation: fadeInPulse 2s;
-  }
-  
-  nav ul li a:hover {
-    color: rgb(171, 145, 230);
-    text-shadow: 0 0 10px rgba(240, 189, 189, 0.5);
-    transform: scale(1.2);
-    text-decoration: none !important;
-    transform: rotateY(180deg);
-    transition: transform 0.5s ease-in-out;
-    animation: fadeInPulse 2s;
-  }
-  
-  nav ul li a:hover::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: rgb(171, 145, 230);
-    margin-top: 2px;
-    transition: all 0.2s ease;
-    text-decoration: none;
-  }
-  
-  .separator {
-    margin: 0 10px;
-    text-shadow: 0 0 10px rgb(171, 145, 230);
-    animation: fadeInPulse 2s;
-  }
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.02);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
+}
 
-  div.description {
-    border: 2px solid rgb(64, 91, 169);
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: auto;
-    padding: 20px;
-  
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-  
-    background-image: linear-gradient(to right, coral, #FFC67D);
-    background-color: coral;
+@page {
+  size: A4;
+  margin: 10mm;
+}
+div.header h1 {
+  color: rgb(64, 91, 169);
+  font-family: "Bauhaus 93";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+  line-height: 0.4;
+  animation: fadeIn 2s;
+}
+
+div.header h1:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  div.description p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(64, 91, 169);
-    font-weight: bold;
+  100% {
+    opacity: 1;
   }
-  .loading {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: loading 2s infinite;
+}
+div.subhead h2{
+  color: rgb(64, 91, 169);
+  text-align: right;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  animation: sparkle 2s infinite;
+  font-weight: 1000;
+}
+
+@keyframes sparkle {
+  0% {
+    opacity: 2;
+    text-shadow: 0 0 0 yellow;
   }
-  
-  @keyframes loading {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
+  50% {
+    opacity: 0.9;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   }
-  .scroll-effect {
-    position: relative;
-    transform: translateY(100px);
-    transition: transform 1s ease-in-out;
+  100% {
+    opacity: 2;
+    text-shadow: 0 0 0 yellow;
   }
-  
-  .scroll-effect.active {
-    transform: translateY(0);
+}
+
+nav ul {
+  list-style: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #FFC67D, coral);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  perspective: 1000px;
+  transform: rotateY(deg);
+  transition: transform 0.5s ease;
+}
+
+nav ul li {
+  margin-right: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+nav ul li a, .separator {
+  font: bold 15px 'Bauhaus 93', sans-serif;
+  color: rgb(64, 91, 169);
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  animation: pulse 2s infinite;
+}
+
+nav ul li a {
+  font: bold 15px 'Bauhaus 93', sans-serif;
+  color: rgb(64, 91, 169);
+  text-decoration: none !important;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  animation: fadeInPulse 2s;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInPulse {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+nav ul li a, .separator {
+  font: bold 15px 'Bauhaus 93', sans-serif;
+  color: rgb(64, 91, 169);
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  animation: fadeInPulse 2s;
+}
+
+nav ul li a:hover {
+  color: rgb(171, 145, 230);
+  text-shadow: 0 0 10px rgba(240, 189, 189, 0.5);
+  transform: scale(1.2);
+  text-decoration: none !important;
+  transform: rotateY(180deg);
+  transition: transform 0.5s ease-in-out;
+  animation: fadeInPulse 2s;
+}
+
+nav ul li a:hover::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(171, 145, 230);
+  margin-top: 2px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.separator {
+  margin: 0 10px;
+  text-shadow: 0 0 10px rgb(171, 145, 230);
+  animation: fadeInPulse 2s;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+div.img img {
+  width: 50% ;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 20px solid rgb(64, 91, 169);
+  transition: transform 0.2s ease-in-out;
+  flex: 0 0 50%
+}
+.img {
+  position: relative;
+  width: 530px;
+  border-radius: 10px;
+
+}
+
+.about-me {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-me h2 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about-me p {
+  font-size: 14px;
+  color: #666;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.description {
+  border: 2px solid rgb(64, 91, 169);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: auto;
+  padding: 20px;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+
+  background-image: linear-gradient(to right, coral, #FFC67D);
+  background-color: coral;
+}
+div.description p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(64, 91, 169);
+  font-weight: bold;
+}
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loading 2s infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.scroll-effect {
+  position: relative;
+  transform: translateY(100px);
+  transition: transform 1s ease-in-out;
+}
+
+.scroll-effect.active {
+  transform: translateY(0);
+}

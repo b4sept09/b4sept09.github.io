@@ -251,4 +251,19 @@ div.container {
   .scroll-effect.active {
     transform: translateY(0);
   }
-  
+  .card {
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    transition: transform 0.3s;
+    background-color: rgb(64, 91, 169);
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card img {
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
