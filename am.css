@@ -294,3 +294,9 @@ div.description p{
 .scroll-effect.active {
   transform: translateY(0);
 }
+@media only screen and (max-width: 768px) {
+  div.container {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+}
