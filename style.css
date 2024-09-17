@@ -281,8 +281,8 @@ div.description p{
   nav ul {
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   nav ul li {
     margin-right: 10px;
