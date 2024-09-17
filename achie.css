@@ -267,3 +267,6 @@ div.container {
     border-radius: 10px;
     object-fit: cover;
   }
+  .card img:active {
+    transform: scale(1.75);
+  }
