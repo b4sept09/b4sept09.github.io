@@ -274,6 +274,6 @@ div.eds h2{
 @media only screen and (max-width: 768px) {
   div.container {
     max-width: 100%;
-    margin: 10px auto;
+    margin: auto auto;
   }
 }
