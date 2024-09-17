@@ -277,3 +277,16 @@ div.description p{
     margin: auto auto;
   }
 }
+@media only screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav ul li {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  nav ul li a {
+    font-size: 14px;
+  }
+}
