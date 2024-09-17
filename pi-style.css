@@ -411,14 +411,3 @@ div.container {
       border-color: transparent;
     }
   } 
-  @media only screen and (max-width: 480px) {
-
-    div.container {
-      max-width: 300px;
-      margin: 10px auto;
-    }
-    div.img img {
-      width: 100%;
-      height: 100%;
-    }
-  }
