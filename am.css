@@ -219,12 +219,12 @@ div.img img {
 }
 
 .about-me {
-  position: absolute;
   bottom: 15px;
   left: 20px;
   background-color: #fff;
   padding: 10px;
   border-radius: 10px;
+  margin-top: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
