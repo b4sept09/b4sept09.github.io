@@ -271,3 +271,9 @@ div.eds ul p{
 div.eds h2{
   color: rgb(64, 91, 169);
 };
+
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+}

@@ -411,3 +411,8 @@ div.container {
       border-color: transparent;
     }
   } 
+  @media only screen and (max-width: 768px) {
+    nav ul {
+      display: none;
+    }
+  }

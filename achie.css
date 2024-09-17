@@ -270,3 +270,8 @@ div.container {
   .card img:active {
     transform: scale(1.75);
   }
+  @media only screen and (max-width: 768px) {
+    nav ul {
+      display: none;
+    }
+  }

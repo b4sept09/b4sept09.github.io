@@ -270,3 +270,8 @@ div.description p{
 .scroll-effect.active {
   transform: translateY(0);
 }
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+}
